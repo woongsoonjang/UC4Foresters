@@ -25,7 +25,7 @@ observe({
     updateSelectInput(session,"target",
                     label = "",
                     choices = subset(.conversions, dim==x)$unit,
-                    selected = subset(.conversions, dim==x)$unit[1])                  
+                    selected = subset(.conversions, dim==x)$unit[2])                  
     
 })
 

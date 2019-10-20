@@ -44,8 +44,15 @@
 	data.frame(dim = 'Mass Density', unit = 'kg/ha', std = 1e-3/1e-4),
 	data.frame(dim = 'Mass Density', unit = 'lbs/acre', std = 2.20462234e-3/((100/2.54/12)^2/43560)),
 
+	data.frame(dim = 'Area Density', unit = 'm2/ha', std = 1/1e-4),
+	data.frame(dim = 'Area Density', unit = 'ft2/acre', std = ((100/2.54/12)^2)/((100/2.54/12)^2/43560)),
+	               
 	data.frame(dim = 'Volume Density', unit = 'm3/ha', std = 1e-3/1e-4),
 	data.frame(dim = 'Volume Density', unit = 'ft3/acre', std = (61.0237440947323/12^3)/((100/2.54/12)^2/43560)),
+	data.frame(dim = 'Volume Density', unit = 'BF/acre', std = (61.0237440947323/144)/((100/2.54/12)^2/43560)),
+	data.frame(dim = 'Volume Density', unit = 'BF/ha', std = (61.0237440947323/144)/(1e-4)),
+	data.frame(dim = 'Volume Density', unit = 'MBF/acre', std = (61.0237440947323/144/1000)/((100/2.54/12)^2/43560)),
+	data.frame(dim = 'Volume Density', unit = 'MBF/ha', std = (61.0237440947323/144/1000)/(1e-4)),	
 		
 	data.frame(dim = 'Temperature', unit = 'C', std = NA),
 	data.frame(dim = 'Temperature', unit = 'F', std = NA),
@@ -61,7 +68,8 @@
 	data.frame(dim = 'Volume', unit = 'gal', std = 1/3.785411784),
 	data.frame(dim = 'Volume', unit = 'inch3', std = 61.0237440947323),
 	data.frame(dim = 'Volume', unit = 'ft3', std = 61.0237440947323/12^3),
-	data.frame(dim = 'Volume', unit = 'board ft', std = 61.0237440947323/144)	
+	data.frame(dim = 'Volume', unit = 'BF', std = 61.0237440947323/144),
+	data.frame(dim = 'Volume', unit = 'MBF', std = 61.0237440947323/144/1000)
 	
 	)
 
